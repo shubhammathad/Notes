@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes App</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <main class="content">
+      <section class="form-section">
+        <h1>Add Notes</h1>
+        <form id="noteForm">
+          <input type="text" id="title" placeholder="Title" required />
+          <textarea id="content" placeholder="Content" required></textarea>
+          <button type="submit">Add</button>
+        </form>
+      </section>
+
+      <section class="notes-section">
+        <h1>My Notes</h1>
+        <div id="notesList" class="notes-grid"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #b7bac2;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.form-section,
+.notes-section {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+form input,
+form textarea {
+  width: 80%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 2px solid black;
+}
+
+form button {
+  padding: 10px 30px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #f0f0f0;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.note {
+  width: 200px;
+  height: 180px;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #000;
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.note h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.note .note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note .note-footer .date {
+  font-size: 12px;
+}
+
+.note .note-footer button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.note-footer i {
+  font-size: 18px;
+  color: black;
+}
+
+.note-footer i:hover {
+  color: #e74c3c;
+  transition: color 0.3s ease;
+}
