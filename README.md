@@ -13,6 +13,16 @@ This is a simple Notes application built with React that allows users to create,
 - Responsive design that works on different screen sizes
 - Local storage to persist notes between sessions
 
+
+## 🛠️ Technologies Used
+
+- **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB (via Mongoose)
+- **Styling**: Poppins font + Responsive layout
+- **Icons**: Font Awesome (for trash icon)
+
+  
 ## Installation
 
 To run this project locally, follow these steps:
